@@ -23,6 +23,10 @@ inputs:
     description: 'POSTGRES_PASSWORD - superuser password'
     required: false
     default: ''
+  postgresql port:
+    description: 'The port to bind to the docker'
+    required: false
+    default: '5432'
 runs:
   using: 'docker'
   image: 'Dockerfile'
